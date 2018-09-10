@@ -52,7 +52,7 @@ namespace WSconsultaTRM
                 {
                     SAPbobsCOM.SBObob bo = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoBridge);
                     bo.SetCurrencyRate("USD", fechaSap, Math.Round(respuestaTRM.value, 2), true);
-                    //se deberia consultar la trm en base de datos y compararla
+                    
                     oCompany.Disconnect();
 
                     Console.WriteLine("TRM Actualizada!");
